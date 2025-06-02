@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Image Generator Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f51ff; 
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  main {
+    background: #ffffff; 
+    max-width: 900px;
+    width: 100%;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #2c2c2c;
+  }
+
+  header {
+    text-align: center;
+    background-color: #14532d;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    color: #39ff14;
+    text-shadow: 0 0 8px #39ff14;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  h2 {
+    color: #1c1c1c;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  p, li {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  ul, ol {
+    padding-left: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: 	#98ff98;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #1976d2;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    color: #bbbbbb;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>AI Image Generator using Stable Diffusion</h1>
+      <p>Portfolio by Tushar Shinde</p>
+    </header>
+
+    <section>
+      <h2>📌 Project Overview</h2>
+      <p>This project is a desktop application built with Python's Tkinter and Hugging Face <strong>Stable Diffusion</strong> to generate images from text prompts. The interface allows users to input a prompt, generate a result, and preview it immediately.</p>
+
+      <h2>💡 Key Features</h2>
+      <ul>
+        <li>Text-to-image generation using Stable Diffusion v1.4</li>
+        <li>User-friendly GUI with CustomTkinter</li>
+        <li>GPU acceleration when available</li>
+        <li>Instant image display and saving functionality</li>
+      </ul>
+
+      <h2>🧠 Technologies Used</h2>
+      <ul>
+        <li><strong>Python</strong> - Core language</li>
+        <li><strong>Tkinter & CustomTkinter</strong> - GUI</li>
+        <li><strong>Hugging Face Diffusers</strong> - AI models</li>
+        <li><strong>Pillow</strong> - Image handling</li>
+        <li><strong>PyTorch</strong> - ML backend</li>
+      </ul>
+
+        <h2>📸 Screenshots</h2>
+    <p>Interface of the application and sample image generation:</p>
+
+    <h3>Application Interface</h3>
+    <img src="1.png" alt="App Screenshot1">
+	
+	<h3>Application Interface</h3>
+    <img src="2.png" alt="App Screenshot2">
+
+    <h3>Generated Image Example</h3>
+    <img src="generatedimage.png" alt="Generated Image">
+
+      <h2>⚙️ How It Works</h2>
+      <ol>
+        <li>User types a prompt into the GUI.</li>
+        <li>Clicking "Generate" runs the Stable Diffusion pipeline.</li>
+        <li>The result is shown and saved as <code>generatedimage.png</code>.</li>
+      </ol>
+
+      <h2>🔗 Project Links</h2>
+    <p>
+	  🔹 NOTE: To run the project, please visit the repository above and follow the instructions provided in the README file.
+	</p>
+	<p>
+      🔹 <a class="button" href="https://github.com/tusharshinde05/AI-Image-Generator" target="_blank">View on GitHub</a>
+    </p>
+    <p>
+      🔹 <a class="button" href="https://huggingface.co/docs/diffusers/index" target="_blank">Diffusers Documentation</a>
+    </p>
+  </section>
+
+    <footer>
+      <p>Created by Tushar Shinde</p>
+    </footer>
+  </main>
+</body>
+</html>
